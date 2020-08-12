@@ -22,6 +22,10 @@ if(isset($_POST['deleteall'])){
     deleteAll();
 }
 
+if(isset($_POST['datatest'])){
+    createDataTest();
+}
+
 function createData(){
     $championName = textboxValue("champion_name");
     $championDescription = textboxValue("champion_description");
@@ -124,6 +128,8 @@ function deleteBtn(){
 }
 
 
+
+
 function deleteAll(){
     $sql = "DROP TABLE champions";
 
@@ -146,6 +152,20 @@ function setID(){
         }
     }
     return ($id + 1);
+}
+
+function createDataTest(){
+
+    $sql = " INSERT INTO champions (champion_name, champion_description, champion_price) 
+    VALUES ('Yasuo','Auto ganh team','6300'),('Yone','Anh trai yasuo','7800'),('Lee Sin','Thay tu mu','6300');
+            ";
+
+    if(mysqli_query($GLOBALS['con'], $sql)){
+            TextNode("success", "Champion Successfully Inserted...!");
+    }
+    else { echo "Error"; }
+
+                       
 }
 
 

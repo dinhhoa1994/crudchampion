@@ -27,6 +27,7 @@ function Createdb(){
                             champion_description VARCHAR (255),
                             champion_price FLOAT 
                         );
+                      
         ";
 
         if(mysqli_query($con, $sql)){

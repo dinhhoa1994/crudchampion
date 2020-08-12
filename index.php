@@ -46,6 +46,8 @@ require_once ("../crud/php/operation.php");
                         <?php buttonElement("btn-update","btn btn-light border","<i class='fas fa-pen-alt'></i>","update","data-toggle='tooltip' data-placement='bottom' title='Update'"); ?>
                         <?php buttonElement("btn-delete","btn btn-danger","<i class='fas fa-trash-alt'></i>","delete","data-toggle='tooltip' data-placement='bottom' title='Delete'"); ?>
                         <?php deleteBtn();?>
+                        <?php buttonElement("btn-test","btn btn-info","<i class='fas fa-grin-tears'></i>","datatest","data-toggle='tooltip' data-placement='bottom' title='Create Data'"); ?>
+                       
                 </div>
             </form>
         </div>
