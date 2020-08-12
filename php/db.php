@@ -1,5 +1,6 @@
 <?php
 
+// use Vendor\Database;
 function Createdb(){
     $servername = "localhost";
     $username = "root";

@@ -1,7 +1,7 @@
 <?php
 
-require_once ("db.php");
-require_once ("component.php");
+require_once ('db.php');
+require_once ('component.php');
 
 $con = Createdb();
 
