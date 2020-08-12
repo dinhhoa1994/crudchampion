@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once ('../crudchampion/php/component.php');
-require_once ('../crudchampion/php/operation.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/crudchampion/php/component.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/crudchampion/php/operation.php';
 ?>
 
 <!doctype html>
