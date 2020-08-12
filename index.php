@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once ('../crud/php/component.php');
-require_once ('../crud/php/operation.php');
+require_once ('../crudchampion/php/component.php');
+require_once ('../crudchampion/php/operation.php');
 ?>
 
 <!doctype html>
